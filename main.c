@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 #define CLASS_SIZE 100
 #define HOSTEL_POP (16*CLASS_SIZE)
 #define HELLO "welcome to veritas"
@@ -21,10 +22,13 @@ int main() {
     return 0;
     */
 
+    /*
     int a = 10;
     int b = 20;
     int c = 30;
-
+    int d = 50;
+    */
+    /*
     if ((a == b) && (c > 20)) {
         printf("Something is clearly wong :(");
     }
@@ -32,4 +36,50 @@ int main() {
     {
         printf("Makes sense");
     };
-}
+    */
+
+    /*
+    // Ternary operation
+    int e = (a > c) ? (a * c) : (a % c);
+    printf("e = %d", e);
+    */
+    /*
+    int day = 6;
+
+    switch (day)
+    {
+    case 1:
+        printf("Monday");
+        break;
+    case 2:
+        printf("Tuesday");
+        break;
+    case 3:
+        printf("Friday");
+        break;
+    case 4:
+        printf("Wednesday");
+    case 5:
+        printf("Thursday");
+    default:
+        printf("Holdiay");
+    }
+    */
+    char grade;
+    printf("Enter your grade: ");
+    scanf("%c", &grade);
+    grade = toupper(grade);
+
+    switch (grade)
+    {
+    case 'A':
+        printf("Perfect Grade");
+        break;
+    case 'B':
+        printf("Good Grade");
+    case 'C':
+        printf("Decent");
+    default:
+        printf("Failed");
+    }
+};
