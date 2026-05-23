@@ -11,7 +11,7 @@ int main() {
     printf("Hello, %s", name);
     return 0;
     */
-    printf(HELLO);
+    /* printf(HELLO);
     printf("\n");
     printf("%s",HELLO);
     printf("\n%d",CLASS_SIZE);
@@ -19,4 +19,17 @@ int main() {
     printf("\n%f",EXP);
     printf("\n\nHello %s. we have %d student in each class and %d in each hostel",HELLO,CLASS_SIZE,HOSTEL_POP);
     return 0;
+    */
+
+    int a = 10;
+    int b = 20;
+    int c = 30;
+
+    if ((a == b) && (c > 20)) {
+        printf("Something is clearly wong :(");
+    }
+    else if ((a != b) || (c > b))
+    {
+        printf("Makes sense");
+    };
 }
